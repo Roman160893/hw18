@@ -1,0 +1,161 @@
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80px;
+   background: rgb(200, 245, 2);
+   border: 2px solid rgb(7, 39, 249);
+   box-sizing: border-box;
+}
+
+.header__logos {
+   width: 60px;
+   height: 60px;
+   margin: 10px;
+}
+
+.header__logo {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   background: rgb(183, 81, 14);
+}
+
+.header__menu {
+   flex: 1 1 auto;
+}
+
+.header__menu ul {
+   display: flex;
+   column-gap: 20px;
+   justify-content: center;
+}
+
+.header__menu ul li {
+   list-style: none;
+   cursor: pointer;
+   padding: 5px 30px;
+   border: 2px solid rgb(7, 39, 249);
+   border-radius: 5px;
+   transition: all .2s;
+}
+
+.header__menu ul li:hover {
+   background-color: blue;
+   color: yellow;
+   cursor: pointer;
+}
+
+.header__buttons {
+   width: 150px;
+   height: 40px;
+   margin: 10px;
+}
+
+.header__button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   background: rgb(183, 81, 14);
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.header__button:hover {
+   background: rgb(161, 91, 43);
+   color: white;
+   box-shadow: 0 0 10px 5px rgb(7, 39, 249)
+}
+
+.main__conteiner {
+   display: flex;
+}
+
+.main__sidebar {
+   flex: 0 0 25%;
+   background: rgb(200, 245, 2);
+   border: 2px solid rgb(7, 39, 249);
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.sidebar__menu {
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid rgb(7, 39, 249);
+   border-top-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   transition: all 0.2s;
+   box-shadow: 0 0 10px 5px rgb(7, 39, 249)
+}
+
+.activ {
+   background-color: blue;
+   color: yellow;
+   cursor: pointer;
+}
+
+.sidebar__menu:hover {
+   background-color: blue;
+   color: yellow;
+   cursor: pointer;
+}
+
+.main__conteiner {
+   border: 2px solid rgb(7, 39, 249);
+   box-sizing: border-box; 
+}
+
+.footer__conteiner {
+   height: 100px;
+   background: rgb(222, 230, 6);
+   border: 2px solid rgb(7, 39, 249);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.icon {
+   display: flex;
+   column-gap: 90px;
+   align-items: center;
+   justify-content: right;
+   margin-top: 30px;
+}
+
+.like {
+   fill: white;
+   cursor: pointer;
+}
+
+.like:hover {
+   font-size: 26px;
+}
+
+.but{
+   background: #15202b;
+   border: none;
+   min-height: 50px;
+}
+
+.share {
+   fill: white;
+   cursor: pointer;
+   
+}
+
+.comments {
+   fill: rgb(255, 255, 255);
+   cursor: pointer;
+}
