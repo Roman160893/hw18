@@ -5,9 +5,10 @@ import Share from '../icon/Share';
 import './PostAuthorStyle.css';
 
 
-export const PostAuthor = ({ data }) => {
+export const PostAuthor = ({ author, content, image, data }) => {
 
-   const { name, photo, nickname, content, image, date } = data
+   const { name, photo, nickname } = author
+
    return (
       <div className='card'>
          <div className='block card__avatar'>
@@ -16,7 +17,7 @@ export const PostAuthor = ({ data }) => {
          <div className='block card__info'>
             <h5 className='card__info-name'> {name} </h5>
             <span className='card__info-nickname'> {nickname}</span>
-            <span className='card__info-date'>{date}</span>
+            <span className='card__info-date'>{data}</span>
             <p className='card__info-content'> {content} </p>
             <div className='card__info-container-image'>
                <img className='card__info-image' src={`${image}`}></img>
